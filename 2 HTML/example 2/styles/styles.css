@@ -25,7 +25,7 @@ body {
     justify-content: center;
 }
 
-.list {
+.unordered-list {
     font-size: 15px;
 }
 
@@ -33,19 +33,19 @@ body {
     font-size: 25px;
 }
 
-.side_by_side {
+.side-by-side {
     width: 25%;
     padding: 0 10%;
     display: inline-block;
 }
 
-#image_group {
+#image-group {
     margin-top: 50px;
     display: flex;
     justify-content: center;
 }
 
-#wide_image {
+#wide-image {
     width: 70%;
     display: flex;
     justify-content: center;
