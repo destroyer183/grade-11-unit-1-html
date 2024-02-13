@@ -18,11 +18,33 @@ body {
 .row {
     display: flex;
     justify-content: center;
+    width: 90%;
+    margin: 50px auto;
+    height: 300px;
+}
+
+#family-paragraph {
+    width: 380px;
 }
 
 .info {
     display: inline-block;
-    padding: 50px 10%
+    padding: 50px 50px;
+    margin: 0 auto;
+    background-color: cornflowerblue;
+    border-radius: 20px;
+}
+
+.test {
+    display: flex;
+    justify-content: center;
+}
+
+.text-image-pair {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    padding: 0 10px;
 }
 
 .list {
