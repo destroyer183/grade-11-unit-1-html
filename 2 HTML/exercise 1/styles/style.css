@@ -24,26 +24,28 @@ body {
 }
 
 #family-paragraph {
-    width: 380px;
+    width: 300px;
 }
 
 .info {
     display: inline-block;
-    padding: 50px 50px;
+    padding: 30px 30px;
     margin: 0 auto;
     background-color: cornflowerblue;
     border-radius: 20px;
+    /* vertical-align: middle; */
 }
 
-.test {
+.group {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .text-image-pair {
     display: flex;
     justify-content: center;
-    height: 300px;
+    height: 250px;
     padding: 0 10px;
 }
 
