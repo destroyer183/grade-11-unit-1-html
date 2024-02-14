@@ -1,11 +1,4 @@
 
-
-alert('Hello World!');
-
-
-
-
-
 const numbers = [1, 2, -2, 6, -7, 9, -4, -8];
 
 console.log('array: ' + numbers.toString());
@@ -49,3 +42,21 @@ console.log('9 + \"1\": \"' + (9 + '1') + '\"');
 console.log('91 - \"1\": ' + (91 - '1'));
 
 console.log('[] == 0: ' + ([] == 0));
+
+
+
+// alert('Hello World!');
+
+
+
+function showQuote4() {
+    alert('If not us, who? If not now, when? ');
+}
+
+function openYoutubeLink() {
+    window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank')
+}
+
+
+
+
