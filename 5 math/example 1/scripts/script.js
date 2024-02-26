@@ -33,11 +33,49 @@ console.log('in 25 years, $1000 earning 5% compounding annually is ' + total);
 // Twitter/X costs him $6.4 billion per year for the next 10 years
 // Tesla stock will increase by 5% compounding each year for the next 10 years. How much will it be worth in 10 years?
 
-let twitterCost = 6400000000 * 10;
+let costOfXPerYear = 6400000000
+let numberOfYearsRunning = 10
 
 let teslaStockPrice = 197.08;
 let teslaSharesOwned = 715000000;
-let equityNow = TeslaStockPrice * teslaSharesOwned;
+let equityNow = teslaStockPrice * teslaSharesOwned;
 
-let income = teslaStockPrice * (1 + 0.05) ** 10 * teslaSharesOwned - twitterCost;
-console.log('Elon Musk made $' + income);
+// Calculate the total cost of running X over the years
+let twitterCost = costOfXPerYear * numberOfYearsRunning;
+
+
+document.getElementById('cost-of-x').innerText = 'X costs $' + costOfXPerYear + ' per year. ' + '\nAfter ' + numberOfYearsRunning + ' years, it will cost $' + totalCostOfX;
+
+
+//  Calculate how much the Tesla shares will be in 10 years, after compunding 5% per year
+let futureEquity = equityNow * (1 + 0.05) ** 10;
+
+// Use the rounding formula to round Elon's future wealth to 2 decimal places
+// The rounding formula is:
+// 1) multiply by 10 ** numberOfDecimalPlaces
+// 2) 
+
+
+// print out how much money Elon has now
+document.getElementById('elon-now').innerText = 'Tesla Stock Price: $' + teslaStockPrice + 
+                                                '\nTesla Shares Owned: ' + teslaSharesOwned + 
+                                                '\nElon\'s Equity: $' + equityNow;
+
+document.getElementById('twitter-cost').innerText = 'in 10 years, Elon will have lost $' + twitterCost + ' to Twitter.';
+
+let futureTeslaStockPrice = teslaStockPrice * (1 + 0.05) ** 10;
+
+document.getElementById('tesla-stock').innerText = 'In 10 years, Tesla stock will be worth $' + futureTeslaStockPrice;
+
+// calculate the profit from tesla stocks in 10 years
+let profitFromTeslaStocks = teslaSharesOwned * futureTeslaStockPrice;
+
+// calculate Elon's future net worth
+let futureElonNetWorth = profitFromTeslaStocks - twitterCost;
+
+// this prints out how much money Elon will make in the next 10 years, and adjusts the text if he gets poorer.
+if (futureElonNetWorth >= 0) {
+    document.getElementById('elon-net-worth').innerText = 'In 10 years, Elon will be $' + futureElonNetWorth + ' richer.';
+} else {
+    document.getElementById('elon-net-worth').innerText = 'In 10 years, Elon will be $' + futureElonNetWorth + ' poorer.';
+}
