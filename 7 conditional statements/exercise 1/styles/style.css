@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color:dimgray;
+}
+
+#muffin-image {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+}
+
+.upgrade {
+    display: inline-block;
+    width: 20%;
+    padding: 30px;
+    margin: 0 20px;
+    background-color: darkgray;
+    border-radius: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+.upgrade-image {
+    width: 200px;
+    height: 200px;
+}
+
+#upgrade-header {
+    display: flex;
+    justify-content: center;
+}
