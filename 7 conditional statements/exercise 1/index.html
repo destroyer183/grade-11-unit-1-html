@@ -6,46 +6,77 @@
         <link rel="stylesheet" href="styles/style.css">
     </head>
 
-    <body>
+    <body onload="start();">
 
-        <img id="muffin-image" src="assets/muffin.png">
+        <h1 id="win-header" class="header">You Won!</h1>
 
-        <h1 id="muffins-owned"></h1>
+        <h1 id="final-time-header" class="header"></h1>
 
-        <h2 id="upgrade-header">Upgrades</h2>
+        <button type="button" id="muffin-button" class="grow" onclick="addMuffin();">
+            <img id="muffin-image" src="assets/muffin.png">
+        </button>
+
+        
+
+        <h1 id="muffins-owned" class="header">Muffins: 0</h1>
+
+        <h1 class="header">Upgrades</h1>
 
         <div class="button-row">
 
-            <div class="upgrade group">
-                <h3 class="upgrade-header content">Muscle</h3>
-                <!-- add info 'i' thingy here -->
-                
-                <div class="info content">
+            <button type="button" id="muscle-button" class="upgrade grow" onclick="addMuscle();">
 
-                    <img class="upgrade-image" src="assets/muscle.png">
+                <div id="muscle-div">
+                    <img id="muscle-info" class="info-image" src="assets/info-icon.png">
+                    <p id="muscle-description" class="description"><b>
+                        Buying muscles will increase your mashing 
+                        power. Each muscle you own will give 
+                        you an additional muffin per click.
+                    </b></p>
 
-                    <div class="info-text">
-                        <span id="muscles-owned"></span>
-                        <span id="muscle-cost"></span>
+                    <div class="group">
+
+                        <h2 class="header">Muscle</h2>
+                        
+                        <div class="content"> <img class="upgrade-image" src="assets/muscle.png"> </div>
+
+                        <div class="info-text">
+                            <span id="muscles-owned">Muscles owned: 0</span>
+                            <br>
+                            <br>
+                            <span id="muscle-cost">Muscle cost: 10 muffins</span>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </button>
 
-            <div class="upgrade group">
-                <h3 class="upgrade-header content">Sibling</h3>
-                    <!-- add info 'i' thingy here -->
+            <button type="button" id="sibling-button" class="upgrade grow" onclick="addSibling();">
 
-                    <div class="info content">
+                <div id="sibling-div">
+                    <img id="sibling-info" class="info-image" src="assets/info-icon.png">
+                    <p id="sibling-description" class="description"><b>
+                        Each sibling you own will automatically mash one muffin per second.
+                    </b></p>
+                    <div class="group">
 
-                    <img class="upgrade-image" src="assets/sibling.png">
+                        <h2 class="header">Sibling</h2>
 
-                    <div class="info-text">
-                        <span id="siblings-owned"></span>
-                        <span id="sibling-cost"></span>
+                        <div class="content"> <img class="upgrade-image" src="assets/sibling.png"> </div>
+
+                        <div class="info-text">
+                            <span id="siblings-owned">Siblings owned: 0</span>
+                            <br>
+                            <br>
+                            <span id="sibling-cost">Sibling cost: 40 muffins</span>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </button>
         </div>
+        
+        <br>
+
+        <h1 id="timer" class="header">Time: 0s</h1>
 
 
 
